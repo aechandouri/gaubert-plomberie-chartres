@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gaubert Plomberie Chauffage — Plombier Chartres (28)</title>
+<meta name="description" content="Gaubert Plomberie Chauffage — plombier et chauffagiste à Chartres. Dépannage fuite urgence, chaudière, chauffe-eau, chauffage. Devis gratuit. Eure-et-Loir (28).">
+<meta property="og:title" content="Gaubert Plomberie Chauffage — Plombier Chartres (28)">
+<meta property="og:description" content="Plombier et chauffagiste à Chartres. Urgences, chaudière, chauffe-eau, plomberie générale. Devis gratuit.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://gaubert-plomberie-chartres.vercel.app/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Gaubert Plomberie Chauffage",
+  "description":"Plombier et chauffagiste à Chartres — dépannage fuite urgence, chaudière, chauffe-eau, chauffage, plomberie générale.",
+  "telephone":"+33607757931",
+  "address":{"@type":"PostalAddress","addressLocality":"Chartres","postalCode":"28000","addressCountry":"FR"},
+  "geo":{"@type":"GeoCoordinates","latitude":48.475315,"longitude":1.4808283},
+  "url":"https://gaubert-plomberie-chartres.vercel.app/",
+  "areaServed":{"@type":"AdministrativeArea","name":"Eure-et-Loir"},
+  "openingHours":"Mo-Fr 07:30-19:00",
+  "priceRange":"€€"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Gaubert Plomberie intervient-il en urgence à Chartres ?","acceptedAnswer":{"@type":"Answer","text":"Oui — Gaubert Plomberie Chauffage intervient en urgence pour les fuites, chaudières et pannes dans tout Chartres et l'Eure-et-Loir (28). Appelez le 06 07 75 79 31."}},
+    {"@type":"Question","name":"Quels travaux réalise Gaubert Plomberie Chauffage ?","acceptedAnswer":{"@type":"Answer","text":"Dépannage fuite, installation et entretien de chaudière, remplacement de chauffe-eau, plancher chauffant, radiateurs, sanitaires, plomberie générale."}},
+    {"@type":"Question","name":"Le devis est-il gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, le devis est gratuit et sans engagement. Contactez-nous au 06 07 75 79 31 ou via le formulaire."}}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#06090F;
+  --bg2:#08111A;
+  --bg3:#0A1520;
+  --orange:#E05C14;
+  --orange2:#F07832;
+  --blue:#1A72A8;
+  --blue2:#24A0DE;
+  --text:#EEF4FA;
+  --text2:#8AA0BA;
+  --text3:#3A5068;
+  --border:rgba(26,114,168,.15);
+  --border2:rgba(224,92,20,.2);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Epilogue',sans-serif;font-size:16px;line-height:1.6;
+  overflow-x:hidden;cursor:none;
+}
+
+/* CURSOR */
+#cur-dot{position:fixed;width:7px;height:7px;background:var(--orange2);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .08s;}
+#cur-glow{position:fixed;width:300px;height:300px;background:radial-gradient(circle,rgba(224,92,20,.09) 0%,rgba(26,114,168,.04) 50%,transparent 70%);pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:transform .055s linear;border-radius:50%;}
+
+/* GRAIN */
+#grain{position:fixed;inset:0;pointer-events:none;z-index:9997;opacity:.035;}
+
+/* PARTICLES */
+#ptc{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;}
+
+/* KEYFRAMES */
+@keyframes fadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes borderPulse{0%,100%{border-color:rgba(26,114,168,.15)}50%{border-color:rgba(36,160,222,.4)}}
+@keyframes borderPulseOrange{0%,100%{border-color:rgba(224,92,20,.15)}50%{border-color:rgba(240,120,50,.4)}}
+
+.fade-up{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+
+/* NAVBAR */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 36px;height:70px;
+  background:rgba(6,9,15,.9);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-logo-main{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:17px;letter-spacing:.05em;color:var(--text);}
+.nav-logo-main span{color:var(--orange2);}
+.nav-badge{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(26,114,168,.12);border:1px solid rgba(26,114,168,.28);color:var(--blue2);padding:3px 10px;border-radius:20px;}
+.nav-right{display:flex;align-items:center;gap:18px;}
+.nav-tel{font-weight:600;font-size:14px;color:var(--text2);text-decoration:none;letter-spacing:.02em;transition:color .2s;}
+.nav-tel:hover{color:var(--orange2);}
+.btn-nav{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;padding:10px 20px;border-radius:3px;text-decoration:none;transition:all .2s;white-space:nowrap;}
+.btn-nav:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 8px 24px rgba(224,92,20,.3);}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:90px 5% 60px;overflow:hidden;}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 55% 90% at 12% 50%,rgba(26,114,168,.12) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 60% at 80% 20%,rgba(224,92,20,.07) 0%,transparent 60%),
+    radial-gradient(ellipse 80% 40% at 50% 100%,rgba(4,8,16,.95) 0%,transparent 80%),
+    linear-gradient(160deg,#06090F 0%,#08111A 100%);
+}
+.hero-grid{
+  position:absolute;inset:0;z-index:1;
+  background-image:linear-gradient(rgba(26,114,168,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(26,114,168,.03) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse 70% 80% at 20% 50%,black 0%,transparent 65%);
+  -webkit-mask-image:radial-gradient(ellipse 70% 80% at 20% 50%,black 0%,transparent 65%);
+}
+.hero-inner{position:relative;z-index:2;width:100%;display:flex;align-items:center;justify-content:space-between;gap:40px;}
+.hero-left{flex:1;max-width:580px;}
+
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:24px;}
+.eyebrow-line{width:36px;height:2px;background:linear-gradient(90deg,var(--orange),var(--orange2));}
+.eyebrow-text{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);}
+
+h1{font-family:'Big Shoulders Display',sans-serif;font-weight:900;line-height:.88;font-size:clamp(58px,8vw,104px);color:var(--text);margin-bottom:24px;letter-spacing:-.02em;}
+h1 .city{
+  display:inline;
+  background:linear-gradient(130deg,var(--blue2) 0%,var(--blue) 40%,#0F4A72 100%);
+  background-size:200% auto;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  filter:drop-shadow(0 0 40px rgba(36,160,222,.4)) drop-shadow(0 0 16px rgba(26,114,168,.3));
+  animation:shimmer 5s linear infinite;
+}
+.hero-sub{font-size:15px;color:var(--text2);line-height:1.7;margin-bottom:34px;max-width:440px;}
+.hero-sub strong{color:var(--text);font-weight:600;}
+
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:38px;}
+.pill{display:flex;align-items:center;gap:7px;background:rgba(26,114,168,.07);border:1px solid rgba(26,114,168,.18);backdrop-filter:blur(12px);padding:7px 15px;border-radius:40px;font-size:11px;font-weight:500;color:var(--text2);letter-spacing:.04em;}
+.pill-icon{color:var(--orange);width:13px;height:13px;flex-shrink:0;}
+
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-primary{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:14px;letter-spacing:.09em;text-transform:uppercase;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;padding:16px 28px;border-radius:3px;text-decoration:none;border:none;cursor:pointer;transition:all .25s;display:flex;align-items:center;gap:8px;}
+.btn-primary:hover{filter:brightness(1.1);transform:translateY(-2px);box-shadow:0 14px 36px rgba(224,92,20,.3);}
+.btn-secondary{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:14px;letter-spacing:.09em;text-transform:uppercase;background:transparent;color:var(--text);border:1px solid rgba(26,114,168,.28);padding:16px 28px;border-radius:3px;text-decoration:none;cursor:pointer;transition:all .25s;}
+.btn-secondary:hover{border-color:var(--blue2);color:var(--blue2);background:rgba(26,114,168,.06);}
+
+/* HERO RIGHT */
+.hero-right{position:relative;width:420px;flex-shrink:0;display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding-top:10px;}
+.hero-deco-stack{pointer-events:none;user-select:none;line-height:.82;}
+.hero-deco-word{display:block;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(64px,8vw,108px);letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1px rgba(26,114,168,.1);white-space:nowrap;}
+.hero-deco-word.accent{-webkit-text-stroke:1px rgba(224,92,20,.2);}
+
+.hero-stat-row{display:flex;gap:12px;}
+.stat-card{flex:1;background:rgba(8,17,26,.75);border:1px solid rgba(26,114,168,.14);border-radius:6px;padding:14px 16px;backdrop-filter:blur(16px);animation:borderPulse 3.5s ease-in-out infinite;}
+.stat-card:nth-child(2){animation-delay:.8s;}
+.stat-card:nth-child(3){animation-delay:1.6s;}
+.stat-val{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:28px;letter-spacing:-.02em;background:linear-gradient(135deg,var(--blue2),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.stat-val.shimmer-num{background:linear-gradient(90deg,var(--orange) 0%,var(--orange2) 30%,#FFB060 50%,var(--orange2) 70%,var(--orange) 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 2.8s linear infinite;}
+.stat-lbl{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-top:3px;}
+
+/* URGENCE STRIP */
+.urgence-strip{
+  position:relative;z-index:2;
+  background:linear-gradient(90deg,#B03A08,var(--orange),var(--orange2),var(--orange),#B03A08);
+  background-size:300% 100%;animation:shimmer 4s linear infinite;
+  padding:14px 5%;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;
+}
+.urgence-strip p{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#fff;}
+.urgence-tel{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:16px;letter-spacing:.04em;color:#fff;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.35);transition:border-color .2s;}
+.urgence-sep{color:rgba(255,255,255,.4);font-size:18px;}
+
+/* SECTIONS */
+section{position:relative;z-index:2;padding:100px 5%;}
+.section-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+.section-eyebrow-line{width:32px;height:2px;background:linear-gradient(90deg,var(--orange),var(--orange2));}
+.section-eyebrow-text{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);}
+.section-title{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(34px,5vw,56px);line-height:.92;color:var(--text);margin-bottom:16px;letter-spacing:-.02em;}
+.section-sub{font-size:15px;color:var(--text2);max-width:500px;line-height:1.7;}
+
+/* SERVICES */
+#services{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px;}
+.svc-card{background:rgba(8,17,26,.85);border:1px solid rgba(26,114,168,.14);border-radius:8px;padding:32px 28px;transition:all .3s;cursor:default;transform-style:preserve-3d;position:relative;overflow:hidden;}
+.svc-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(224,92,20,.07) 0%,transparent 60%);opacity:0;transition:opacity .3s;}
+.svc-card:hover::before{opacity:1;}
+.svc-card:hover{border-color:rgba(224,92,20,.3);box-shadow:0 20px 48px rgba(0,0,0,.4),0 0 0 1px rgba(224,92,20,.08);transform:perspective(600px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateZ(4px);}
+.svc-icon{width:44px;height:44px;margin-bottom:20px;background:rgba(26,114,168,.1);border:1px solid rgba(26,114,168,.22);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.svc-icon svg{color:var(--orange);width:22px;height:22px;}
+.svc-name{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:20px;letter-spacing:.01em;color:var(--text);margin-bottom:10px;}
+.svc-desc{font-size:13px;color:var(--text2);line-height:1.65;}
+
+/* AVANTAGES */
+#avantages{background:linear-gradient(180deg,var(--bg2) 0%,var(--bg3) 100%);}
+.avantages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px;}
+.av-card{
+  background:rgba(8,17,26,.8);
+  border:1px solid rgba(26,114,168,.14);
+  border-radius:8px;padding:32px 28px;
+  display:flex;flex-direction:column;gap:16px;
+  animation:borderPulse 4s ease-in-out infinite;
+  transition:border-color .3s;
+}
+.av-card:nth-child(2){animation-delay:.6s;}
+.av-card:nth-child(3){animation-delay:1.2s;}
+.av-card:nth-child(4){animation-delay:1.8s;}
+.av-card:nth-child(5){animation-delay:2.4s;}
+.av-card:nth-child(6){animation-delay:3s;}
+.av-card:hover{border-color:rgba(224,92,20,.28);}
+.av-num{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:48px;line-height:1;background:linear-gradient(135deg,var(--orange),var(--orange2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.02em;}
+.av-title{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:18px;color:var(--text);letter-spacing:.01em;}
+.av-desc{font-size:13px;color:var(--text2);line-height:1.65;}
+
+/* CERTIFICATIONS */
+.certs-bar{position:relative;z-index:2;background:rgba(8,17,26,.8);backdrop-filter:blur(20px);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 5%;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;}
+.cert-item{display:flex;align-items:center;gap:10px;}
+.cert-icon{color:var(--orange);width:18px;height:18px;flex-shrink:0;}
+.cert-text{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text2);}
+
+/* ZONE */
+#zone{background:var(--bg2);}
+.zone-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:56px;}
+.zone-list{display:flex;flex-direction:column;gap:10px;}
+.zone-item{display:flex;align-items:center;gap:12px;padding:12px 16px;background:rgba(8,17,26,.7);border:1px solid var(--border);border-radius:6px;font-size:13px;font-weight:500;color:var(--text2);}
+.zone-dot{width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;}
+.map-frame{border-radius:8px;overflow:hidden;border:1px solid var(--border);height:320px;}
+.map-frame iframe{width:100%;height:100%;display:block;border:none;filter:invert(90%) hue-rotate(200deg) saturate(.5) brightness(.8);}
+
+/* ABOUT */
+#about{background:linear-gradient(180deg,var(--bg2) 0%,var(--bg3) 100%);}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.about-avatar{width:260px;height:260px;border-radius:12px;background:rgba(8,17,26,.9);border:1px solid rgba(26,114,168,.22);display:flex;align-items:center;justify-content:center;position:relative;}
+.about-avatar-letters{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:72px;color:rgba(26,114,168,.18);letter-spacing:-.04em;}
+.about-deco{position:absolute;top:-16px;right:-16px;width:80px;height:80px;border-radius:50%;background:rgba(224,92,20,.08);border:1px solid rgba(224,92,20,.2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;}
+.about-deco-num{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:18px;color:var(--orange2);}
+.about-deco-txt{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);}
+.about-title{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(30px,4vw,46px);color:var(--text);margin-bottom:8px;letter-spacing:-.02em;}
+.about-subtitle{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:20px;}
+.about-text{font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:24px;}
+.about-highlights{display:flex;flex-direction:column;gap:10px;}
+.about-hl{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);}
+.about-hl svg{color:var(--orange);width:16px;height:16px;flex-shrink:0;}
+
+/* CONTACT */
+#contact{background:linear-gradient(180deg,var(--bg3) 0%,var(--bg) 100%);}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+.contact-info{display:flex;flex-direction:column;gap:14px;margin-top:32px;}
+.contact-info-item{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text2);}
+.contact-info-item svg{color:var(--orange);width:18px;height:18px;flex-shrink:0;}
+.contact-info-item a{color:inherit;text-decoration:none;transition:color .2s;}
+.contact-info-item a:hover{color:var(--orange2);}
+.contact-form{background:rgba(8,17,26,.9);backdrop-filter:blur(20px);border:1px solid rgba(26,114,168,.18);border-radius:10px;padding:36px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.form-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);}
+.form-input,.form-select,.form-textarea{background:rgba(6,9,15,.8);border:1px solid rgba(26,114,168,.2);border-radius:4px;padding:12px 14px;font-family:'Epilogue',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border-color .2s;width:100%;-webkit-appearance:none;}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--orange);}
+.form-input::placeholder,.form-textarea::placeholder{color:var(--text3);}
+.form-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23E05C14' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;}
+.form-select option{background:#06090F;color:var(--text);}
+.form-textarea{resize:vertical;min-height:100px;}
+.btn-submit{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:uppercase;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;padding:16px 24px;border-radius:3px;border:none;cursor:pointer;width:100%;transition:all .25s;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:8px;}
+.btn-submit:hover{filter:brightness(1.1);transform:translateY(-2px);box-shadow:0 12px 32px rgba(224,92,20,.3);}
+.form-note{font-size:11px;color:var(--text3);text-align:center;margin-top:12px;}
+
+/* FOOTER */
+footer{position:relative;z-index:2;background:rgba(2,5,10,.98);border-top:1px solid var(--border);padding:40px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+.footer-brand{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:15px;letter-spacing:.06em;color:var(--text2);}
+.footer-brand span{color:var(--orange);}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap;}
+.footer-links a{font-size:12px;color:var(--text3);text-decoration:none;transition:color .2s;letter-spacing:.04em;}
+.footer-links a:hover{color:var(--orange);}
+.footer-copy{font-size:11px;color:var(--text3);}
+
+/* MOBILE BAR */
+.mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(6,9,15,.96);backdrop-filter:blur(20px);border-top:1px solid rgba(224,92,20,.2);padding:12px 16px 16px;gap:10px;}
+.mobile-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:13px;letter-spacing:.07em;text-transform:uppercase;padding:13px 12px;border-radius:4px;text-decoration:none;transition:all .2s;}
+.mb-call{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;}
+.mb-devis{background:rgba(26,114,168,.12);border:1px solid rgba(26,114,168,.25);color:var(--text);}
+.mb-icon{width:16px;height:16px;}
+
+@media(max-width:768px){
+  .mobile-bar{display:flex;}
+  body{padding-bottom:80px;}
+  nav{padding:0 20px;height:62px;}
+  .nav-tel,.nav-badge{display:none;}
+  h1{font-size:clamp(50px,13vw,76px);}
+  .hero{padding:80px 5% 50px;}
+  .hero-inner{flex-direction:column;}
+  .hero-right{width:100%;order:-1;}
+  .hero-deco-stack{display:none;}
+  .hero-stat-row{display:none;}
+  .services-grid,.avantages-grid{grid-template-columns:1fr;}
+  .zone-grid,.about-inner,.contact-inner{grid-template-columns:1fr;}
+  section{padding:70px 5%;}
+  .certs-bar{gap:24px;}
+}
+@media(max-width:1024px){
+  .hero-right{width:360px;}
+  .hero-deco-word{font-size:72px;}
+  .services-grid,.avantages-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+
+<div id="cur-dot"></div>
+<div id="cur-glow"></div>
+<canvas id="grain"></canvas>
+<canvas id="ptc"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-main">GAUBERT <span>PLOMBERIE</span></span>
+    <span class="nav-badge">Chartres · 28</span>
+  </a>
+  <div class="nav-right">
+    <a href="tel:0607757931" class="nav-tel">06 07 75 79 31</a>
+    <a href="#contact" class="btn-nav">Devis gratuit</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+
+    <div class="hero-left fade-up">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-line"></div>
+        <span class="eyebrow-text">Plombier · Chauffagiste — Eure-et-Loir</span>
+      </div>
+      <h1>Plombier<br>chauffagiste<br>à <span class="city" id="city-scramble">CHARTRES</span></h1>
+      <p class="hero-sub"><strong>Gaubert Plomberie Chauffage</strong> — dépannage fuite urgence, chaudière, chauffe-eau et chauffage dans tout Chartres et l'Eure-et-Loir.</p>
+      <div class="pills">
+        <span class="pill">
+          <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Intervention rapide
+        </span>
+        <span class="pill">
+          <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          Devis gratuit
+        </span>
+        <span class="pill">
+          <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          Plomberie &amp; Chauffage
+        </span>
+        <span class="pill">
+          <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Eure-et-Loir (28)
+        </span>
+      </div>
+      <div class="hero-ctas">
+        <a href="tel:0607757931" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          06 07 75 79 31
+        </a>
+        <a href="#contact" class="btn-secondary">Demander un devis</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-deco-stack">
+        <span class="hero-deco-word accent">PLOMBERIE</span>
+        <span class="hero-deco-word">CHAUFFAGE</span>
+        <span class="hero-deco-word accent">28</span>
+      </div>
+      <div class="hero-stat-row">
+        <div class="stat-card">
+          <div class="stat-val shimmer-num">URG.</div>
+          <div class="stat-lbl">Dépannage</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">2×</div>
+          <div class="stat-lbl">Compétences</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">28</div>
+          <div class="stat-lbl">Eure-et-Loir</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- URGENCE -->
+<div class="urgence-strip">
+  <p>Fuite · Chaudière · Chauffe-eau</p>
+  <span class="urgence-sep">·</span>
+  <a href="tel:0607757931" class="urgence-tel">06 07 75 79 31</a>
+  <span class="urgence-sep">·</span>
+  <p>Devis gratuit — sans engagement</p>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-eyebrow fade-up">
+    <div class="section-eyebrow-line"></div>
+    <span class="section-eyebrow-text">Nos prestations</span>
+  </div>
+  <h2 class="section-title fade-up">Plomberie<br>&amp; Chauffage</h2>
+  <p class="section-sub fade-up">Deux métiers, un seul artisan — Gaubert Plomberie Chauffage couvre l'ensemble de vos besoins en eau et en chaleur.</p>
+  <div class="services-grid">
+    <div class="svc-card fade-up">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6 2 2 7 2 12s4 10 10 10 10-4.5 10-10S18 2 12 2z"/><path d="M12 8v4M12 16h.01"/></svg></div>
+      <div class="svc-name">Dépannage Urgence</div>
+      <p class="svc-desc">Fuite d'eau, canalisation bouchée, robinetterie cassée — intervention rapide pour stopper les dégâts et remettre en service.</p>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg></div>
+      <div class="svc-name">Chaudière</div>
+      <p class="svc-desc">Installation, remplacement et entretien de chaudière gaz, fioul et à condensation. Diagnostic panne, mise aux normes.</p>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg></div>
+      <div class="svc-name">Chauffe-eau</div>
+      <p class="svc-desc">Remplacement de ballon électrique, chauffe-eau thermodynamique ou instantané. Pose rapide, garantie fabricant.</p>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 10h18M3 14h18M3 18h18"/></svg></div>
+      <div class="svc-name">Radiateurs &amp; Chauffage</div>
+      <p class="svc-desc">Pose et remplacement de radiateurs, plancher chauffant, équilibrage de circuit. Confort thermique optimisé.</p>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+      <div class="svc-name">Plomberie Générale</div>
+      <p class="svc-desc">Remplacement de robinetterie, mitigeurs, joints, canalisations. Rénovation complète de salle de bain et cuisine.</p>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+      <div class="svc-name">Détection de Fuite</div>
+      <p class="svc-desc">Recherche non destructive par détection acoustique ou thermique. Localisation précise avant toute intervention.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<div class="certs-bar fade-up">
+  <div class="cert-item">
+    <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+    <span class="cert-text">Artisan qualifié</span>
+  </div>
+  <div class="cert-item">
+    <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <span class="cert-text">Assurance décennale</span>
+  </div>
+  <div class="cert-item">
+    <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+    <span class="cert-text">Devis gratuit</span>
+  </div>
+  <div class="cert-item">
+    <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <span class="cert-text">Réponse rapide</span>
+  </div>
+  <div class="cert-item">
+    <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    <span class="cert-text">Chartres (28)</span>
+  </div>
+</div>
+
+<!-- AVANTAGES -->
+<section id="avantages">
+  <div class="section-eyebrow fade-up">
+    <div class="section-eyebrow-line"></div>
+    <span class="section-eyebrow-text">Pourquoi nous choisir</span>
+  </div>
+  <h2 class="section-title fade-up">6 raisons de<br>faire confiance</h2>
+  <div class="avantages-grid">
+    <div class="av-card fade-up">
+      <div class="av-num">01</div>
+      <div class="av-title">Double compétence</div>
+      <p class="av-desc">Plomberie ET chauffage dans la même entreprise — un seul interlocuteur pour tous vos besoins en eau et en chaleur.</p>
+    </div>
+    <div class="av-card fade-up">
+      <div class="av-num">02</div>
+      <div class="av-title">Intervention rapide</div>
+      <p class="av-desc">Dépannage et urgences traités en priorité. Pas de délai inutile — on intervient dès que possible.</p>
+    </div>
+    <div class="av-card fade-up">
+      <div class="av-num">03</div>
+      <div class="av-title">Devis transparent</div>
+      <p class="av-desc">Devis gratuit, détaillé et sans surprise. Le prix annoncé est le prix facturé — aucun coût caché.</p>
+    </div>
+    <div class="av-card fade-up">
+      <div class="av-num">04</div>
+      <div class="av-title">Matériel de qualité</div>
+      <p class="av-desc">Pièces et équipements de marques reconnues uniquement. Durabilité et garantie fabricant sur chaque installation.</p>
+    </div>
+    <div class="av-card fade-up">
+      <div class="av-num">05</div>
+      <div class="av-title">Travail soigné</div>
+      <p class="av-desc">Chantier propre, finitions impeccables. On ne part pas tant que vous n'êtes pas satisfait du résultat.</p>
+    </div>
+    <div class="av-card fade-up">
+      <div class="av-num">06</div>
+      <div class="av-title">Ancrage local</div>
+      <p class="av-desc">Basé à Chartres, on connaît le secteur. Artisan de proximité dans tout l'Eure-et-Loir (28).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE -->
+<section id="zone">
+  <div class="section-eyebrow fade-up">
+    <div class="section-eyebrow-line"></div>
+    <span class="section-eyebrow-text">Zone d'intervention</span>
+  </div>
+  <h2 class="section-title fade-up">Chartres<br>&amp; Eure-et-Loir</h2>
+  <div class="zone-grid">
+    <div>
+      <p class="section-sub fade-up" style="margin-bottom:28px">Gaubert Plomberie Chauffage intervient dans tout Chartres et les communes du département 28.</p>
+      <div class="zone-list fade-up">
+        <div class="zone-item"><div class="zone-dot"></div>Chartres &amp; agglomération</div>
+        <div class="zone-item"><div class="zone-dot"></div>Lucé · Mainvilliers</div>
+        <div class="zone-item"><div class="zone-dot"></div>Luisant · Le Coudray</div>
+        <div class="zone-item"><div class="zone-dot"></div>Nogent-le-Rotrou</div>
+        <div class="zone-item"><div class="zone-dot"></div>Dreux</div>
+        <div class="zone-item"><div class="zone-dot"></div>Eure-et-Loir (28)</div>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="map-frame">
+        <iframe src="https://maps.google.com/maps?q=48.475315,1.4808283&t=&z=13&output=embed" title="Gaubert Plomberie Chauffage — Chartres"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="fade-up">
+      <div class="about-avatar">
+        <span class="about-avatar-letters">GP</span>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">L'entreprise</span>
+      </div>
+      <h2 class="about-title">Gaubert Plomberie Chauffage</h2>
+      <p class="about-subtitle">Plombier · Chauffagiste — Chartres (28)</p>
+      <p class="about-text">Gaubert Plomberie Chauffage est une entreprise artisanale basée à Chartres, intervenant dans tout l'Eure-et-Loir pour les particuliers et les professionnels.<br><br>La double compétence plomberie et chauffage permet de tout gérer en un seul appel — de la fuite urgente à l'installation complète d'un système de chauffage.</p>
+      <div class="about-highlights">
+        <div class="about-hl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg>
+          Plombier ET chauffagiste — double compétence
+        </div>
+        <div class="about-hl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg>
+          Dépannage urgence disponible
+        </div>
+        <div class="about-hl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg>
+          Devis gratuit, prix transparent
+        </div>
+        <div class="about-hl">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg>
+          Artisan local — Chartres &amp; Eure-et-Loir
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="fade-up">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">Devis gratuit</span>
+      </div>
+      <h2 class="section-title">Un problème ?<br>Appelez-nous.</h2>
+      <p class="section-sub">Devis gratuit sur place, réponse rapide garantie. Plomberie, chauffage, urgence — on prend en charge.</p>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:0607757931">06 07 75 79 31</a>
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Chartres, Eure-et-Loir (28)
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Lun–Ven 7h30–19h00
+        </div>
+      </div>
+    </div>
+    <div class="fade-up">
+      <form class="contact-form" action="mailto:contact@gaubert-plomberie.fr" method="post" enctype="text/plain">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="nom">Nom</label>
+            <input class="form-input" type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="tel">Téléphone</label>
+            <input class="form-input" type="tel" id="tel" name="tel" placeholder="06 __ __ __ __" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="votre@email.fr">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="type">Type de travaux</label>
+          <select class="form-select" id="type" name="type">
+            <option value="">Sélectionner...</option>
+            <option>Urgence fuite</option>
+            <option>Chaudière</option>
+            <option>Chauffe-eau / Ballon</option>
+            <option>Radiateurs / Chauffage</option>
+            <option>Plomberie générale</option>
+            <option>Détection de fuite</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="msg">Votre problème</label>
+          <textarea class="form-textarea" id="msg" name="msg" placeholder="Décrivez brièvement..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Envoyer ma demande
+        </button>
+        <p class="form-note">Devis gratuit · Sans engagement · Réponse rapide</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">GAUBERT <span>PLOMBERIE</span> CHAUFFAGE — Chartres (28)</div>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#avantages">Avantages</a>
+    <a href="#zone">Zone</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p class="footer-copy">© 2025 Gaubert Plomberie Chauffage</p>
+</footer>
+
+<div class="mobile-bar" style="display:flex">
+  <a href="tel:0607757931" class="mb-call">
+    <svg class="mb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.18 2 2 0 012.06 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    06 07 75 79 31
+  </a>
+  <a href="#contact" class="mb-devis">
+    <svg class="mb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+    Devis gratuit
+  </a>
+</div>
+
+<script>
+/* CURSOR */
+const dot=document.getElementById('cur-dot'),glow=document.getElementById('cur-glow');
+let mx=innerWidth/2,my=innerHeight/2,gx=mx,gy=my;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function l(){gx+=(mx-gx)*.055;gy+=(my-gy)*.055;glow.style.left=gx+'px';glow.style.top=gy+'px';requestAnimationFrame(l);})();
+
+/* GRAIN */
+const gc=document.getElementById('grain'),gctx=gc.getContext('2d');
+function rg(){gc.width=innerWidth;gc.height=innerHeight;}
+function dg(){const id=gctx.createImageData(gc.width,gc.height),d=id.data;for(let i=0;i<d.length;i+=4){const v=Math.random()*255|0;d[i]=d[i+1]=d[i+2]=v;d[i+3]=255;}gctx.putImageData(id,0,0);}
+rg();dg();setInterval(dg,80);window.addEventListener('resize',rg);
+
+/* PARTICLES — bulles d'eau */
+const pc=document.getElementById('ptc'),pctx=pc.getContext('2d');
+function rp(){pc.width=innerWidth;pc.height=innerHeight;}
+rp();window.addEventListener('resize',rp);
+const BCOLS=['rgba(26,114,168,','rgba(36,160,222,','rgba(224,92,20,','rgba(240,120,50,'];
+class Bubble{
+  constructor(){this.reset(true);}
+  reset(init){
+    this.x=Math.random()*pc.width;
+    this.y=init?Math.random()*pc.height:pc.height+10;
+    this.r=Math.random()*3+1;
+    this.vy=-(Math.random()*.6+.2);
+    this.vx=(Math.random()-.5)*.3;
+    this.ox=this.x;this.phase=Math.random()*Math.PI*2;
+    this.color=BCOLS[Math.floor(Math.random()*BCOLS.length)];
+    this.alpha=Math.random()*.3+.1;
+  }
+  update(){
+    this.phase+=.02;this.x=this.ox+Math.sin(this.phase)*8;
+    this.y+=this.vy;this.ox+=this.vx;
+    if(this.y<-10)this.reset(false);
+  }
+  draw(){
+    pctx.beginPath();pctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+    pctx.fillStyle=this.color+this.alpha+')';pctx.fill();
+  }
+}
+const bubbles=Array.from({length:70},()=>new Bubble());
+(function ab(){pctx.clearRect(0,0,pc.width,pc.height);bubbles.forEach(b=>{b.update();b.draw();});requestAnimationFrame(ab);})();
+
+/* SCRAMBLE */
+const cityEl=document.getElementById('city-scramble');
+const ORIG='CHARTRES',CHARS='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+function scramble(){
+  let iter=0;
+  const iv=setInterval(()=>{
+    cityEl.textContent=ORIG.split('').map((c,i)=>i<iter?ORIG[i]:CHARS[Math.floor(Math.random()*CHARS.length)]).join('');
+    if(++iter>ORIG.length){clearInterval(iv);cityEl.textContent=ORIG;}
+  },50);
+}
+setTimeout(scramble,900);setInterval(scramble,7000);
+
+/* FADE UP */
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+/* 3D TILT */
+document.querySelectorAll('.svc-card').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect(),cx=(e.clientX-r.left)/r.width-.5,cy=(e.clientY-r.top)/r.height-.5;
+    card.style.setProperty('--rx',(-cy*10)+'deg');card.style.setProperty('--ry',(cx*10)+'deg');
+    card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+  });
+  card.addEventListener('mouseleave',()=>{card.style.setProperty('--rx','0deg');card.style.setProperty('--ry','0deg');card.style.transform='';});
+});
+</script>
+</body>
+</html>
